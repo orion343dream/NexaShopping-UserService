@@ -8,3 +8,7 @@ spring:
   cloud:
     config:
       uri: http://config.platform:9000
+
+      eureka:
+  instance:
+    instance-id: ${spring.application.name}:${random.value}
